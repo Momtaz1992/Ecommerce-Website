@@ -208,35 +208,35 @@ li {
        right: -5%;
        height: 70rem;
        object-fit: contain;
-     }
-     
-     .hero-content {
+}
+
+.hero-content {
        position: absolute;
        top: 50%;
        transform: translate(25%, -50%);
-     }
-     
-     .hero-content h2 {
+}
+
+.hero-content h2 {
        color: #b888ff;
        font-size: 3rem;
        font-weight: 700;
        margin-bottom: 1rem;
-     }
-     
-     .hero-content .discount {
+}
+
+.hero-content .discount {
        color: #fbb419;
-     }
-     
-     .hero-content h1 span {
+}
+
+.hero-content h1 span {
        color: #253b70;
        font-size: 6rem;
        font-weight: 700;
        display: block;
        line-height: 1;
        text-shadow: 3px 3px 0 #f1f1f1, 4px 4px 0 #f1f1f1;
-     }
-     
-     .btn {
+}
+
+.btn {
        display: inline-block;
        background-color: #fc7c7c;
        padding: 1.2rem 4rem;
@@ -244,66 +244,128 @@ li {
        font-weight: 600;
        text-transform: uppercase;
        margin-top: 3rem;
-     }
-     
-     @media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 1200px) {
        .header .hero-img {
-         right: -20%;
+              right: -20%;
        }
-     
        .hero-content {
-         transform: translate(20%, -50%);
+              transform: translate(20%, -50%);
        }
-     
        .hero-content h2 {
-         font-size: 2rem;
+              font-size: 2rem;
        }
-     
        .hero-content h1 span {
-         font-size: 5rem;
+              font-size: 5rem;
        }
-     }
-     
-     @media only screen and (max-width: 996px) {
+}
+
+@media only screen and (max-width: 996px) {
        .header {
-         min-height: 70vh;
+              min-height: 70vh;
        }
-     
        .header .hero-img {
-         height: 40rem;
-         right: -10%;
+              height: 40rem;
+              right: -10%;
        }
-     }
-     
-     @media only screen and (max-width: 567px) {
+}
+@media only screen and (max-width: 567px) {
        .header {
-         min-height: 100vh;
+              min-height: 100vh;
        }
-     
+
        .header .hero-img {
-         height: 40rem;
-         bottom: -15%;
-       }
-     
+              height: 40rem;
+              bottom: -15%;
+       }      
        .hero-content {
-         top: 40%;
-         transform: translate(15%, -50%);
+              top: 40%;
+              transform: translate(15%, -50%);
        }
-     
        .header .hero-img {
-         right: 0%;
+              right: 0%;
        }
-     
        .hero-content h2 {
-         font-size: 1.8rem;
+              font-size: 1.8rem;
        }
-     
        .hero-content h1 span {
-         font-size: 4rem;
+              font-size: 4rem;
        }
-     
        .hero-content a {
-         padding: 1rem 3rem;
+              padding: 1rem 3rem;
        }
-     }
-     
+}
+
+     /* Adverts */
+.section {
+       padding: 10rem 0 5rem 0;
+}
+
+.advert-center {
+       display: grid;
+       grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+       gap: 3rem;
+}
+
+.advert-box {
+       position: relative;
+       color: #fff;
+       height: 27rem;
+       border-radius: 1rem;
+       padding: 1.6rem;
+       overflow: hidden;
+       z-index: 1;
+}
+
+.advert-box img {
+       position: absolute;
+       bottom: 0%;
+       left: -20%;
+       height: 100%;
+       width: 35rem;
+       z-index: -1;
+}
+
+.advert-box:nth-child(1) {
+       background-color: #f5c5d1;
+}
+
+.advert-box:nth-child(2) {
+       background-color: #a1d1df;
+}
+
+.advert-box:nth-child(3) {
+       background-color: #e5bc00;
+}
+
+.advert-box .dotted {
+       position: relative;
+       height: 100%;
+       border: 2px dashed #f1f1f1;
+       border-radius: 1rem;
+}
+
+.advert-box .content {
+       position: absolute;
+       top: 50%;
+       right: 5%;
+       transform: translate(0, -50%);
+}
+
+.advert-box .content h2,
+.advert-box .content h4 {
+       text-shadow: 5px 6px 0px rgba(37, 59, 112, 0.1);
+}
+
+.advert-box .content h2 {
+       line-height: 1.2;
+       font-size: 3rem;
+       font-weight: 700;
+       margin-bottom: 1rem;
+}
+
+.advert-box .content h4 {
+       font-size: 1.5rem;
+       text-transform: capitalize;
+}
