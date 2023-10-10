@@ -259,9 +259,11 @@ li {
 @media only screen and (max-width: 1200px) {
        .header .hero-img {
               right: -20%;
+              margin-top: 5rem;
        }
        .hero-content {
               transform: translate(20%, -50%);
+              margin-left: 4rem;
        }
        .hero-content h2 {
               font-size: 2rem;
@@ -282,12 +284,12 @@ li {
 }
 @media only screen and (max-width: 567px) {
        .header {
-              min-height: 100vh;
+              min-height: 70vh;
        }
 
        .header .hero-img {
-              height: 40rem;
-              bottom: -15%;
+              height: 50rem;
+              bottom: -25%;
        }      
        .hero-content {
               top: 40%;
@@ -310,6 +312,10 @@ li {
      /* Adverts */
 .section {
        padding: 10rem 0 5rem 0;
+}
+.aboutPage{
+       padding: 1rem 0 0 0;
+       
 }
 
 .advert-center {
@@ -519,7 +525,9 @@ li {
        height: 50rem;
        background-color: #243a6f;
 }
-
+.aboutPage{
+margin-bottom: 43rem;
+}
 .product-banner .left img {
        object-fit: cover;
        height: 100%;
@@ -549,10 +557,71 @@ li {
        display: block;
        line-height: 1;
 }
-
+.section5{
+       width: 70%;
+       margin: 20px auto;
+       padding: 30px;
+}
+.firstPart{
+       display: flex;
+       justify-content: start;
+       align-items: center;
+       gap: 30px;
+       padding: 40px;
+}
+.containerSection5 h3{
+       font-size: 60px;
+       color: #2d565b;
+       padding: 25px;
+}
+.containerSection5 p{
+       font-size: 30px;
+       padding: 25px;
+       color: #333333;
+}
+.imgSection5 img{
+       width: 560px;
+       border-radius: 10%;
+}
+.secondPart{
+       padding: 25px;
+}
+.secondPart p{
+       font-size: 30px;
+       padding: 25px;
+       color: #333333;
+}
+.linkContainer5{
+       padding: 25px;
+}
+.linkContainer5 details summary{
+       text-decoration: none;
+       color: #2d565b;
+       cursor: pointer;
+       font-size: 40px;
+}
+.container h4{
+       padding: 10px;
+       font-size: 20px;
+}
+.container p{
+       padding: 10px;
+       font-size: 26px;
+}
 @media only screen and (max-width: 996px) {
        .product-banner .content h1 span {
               font-size: 5rem;
+       }
+       .imgSection5 img{
+              display: block;
+       }
+       .section5{
+              text-align: center;
+              width: 100%;
+       }
+       .firstPart{
+              flex-direction: column;
+              
        }
 }
 
@@ -902,6 +971,7 @@ form span {
               text-align: center;
               padding: 0.5rem;
        }
+       
 }
 @media only screen and (max-width: 650px) {
        .product-detail .details {
