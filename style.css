@@ -106,6 +106,15 @@ li {
 
 .logo h1 {
        font-size: 2.5rem;
+       color: #eda407;
+       font-weight: 800;
+       letter-spacing: 1px;
+}
+.logo h1 .logo1{
+       color:#fbb419;
+}
+.logo h1 .logo2{
+       color: #b888ff;
 }
 
 .nav-list {
@@ -206,7 +215,7 @@ li {
        position: absolute;
        bottom: -10%;
        right: -5%;
-       height: 70rem;
+       height: 110rem;
        object-fit: contain;
 }
 
@@ -218,7 +227,7 @@ li {
 
 .hero-content h2 {
        color: #b888ff;
-       font-size: 3rem;
+       font-size: 7rem;
        font-weight: 700;
        margin-bottom: 1rem;
 }
